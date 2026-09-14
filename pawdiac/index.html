@@ -3,77 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pawdiac – Support</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #080810; color: #fff; max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; }
-    nav { margin-bottom: 48px; }
-    nav a { color: #9B7FD4; text-decoration: none; font-size: 14px; }
-    .logo { font-size: 40px; margin-bottom: 12px; }
-    h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
-    .subtitle { color: #A090B0; font-size: 15px; margin-bottom: 48px; }
-    .links { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; }
-    .links a { background: #1A1528; color: #9B7FD4; padding: 10px 20px; border-radius: 10px; text-decoration: none; font-size: 14px; font-weight: 500; border: 1px solid #2A2040; }
-    .links a:hover { background: #2A2040; }
-    h2 { font-size: 18px; font-weight: 600; margin-bottom: 12px; margin-top: 36px; color: #9B7FD4; }
-    p, li { color: #A090B0; font-size: 15px; line-height: 1.7; }
-    ul { padding-left: 20px; }
-    ul li { margin-bottom: 6px; }
-    .contact { margin-top: 48px; padding: 24px; background: #1A1528; border-radius: 16px; border: 1px solid #2A2040; }
-    .contact a { color: #9B7FD4; text-decoration: none; }
-    footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid #1A1528; }
-    footer a { color: #A090B0; font-size: 13px; text-decoration: none; margin-right: 16px; }
-    footer a:hover { color: #9B7FD4; }
-  </style>
+  <title>Pawdiac - Dog zodiac astrology</title>
+  <meta name="description" content="Pawdiac creates cosmic personality profiles and daily readings for dogs. The stars speak to them too.">
+  <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
-  <nav><a href="/">← All Apps</a></nav>
-  <div class="logo">🐾</div>
-  <h1>Pawdiac Support</h1>
-  <p class="subtitle">Dog astrology &amp; cosmic intelligence</p>
-
-  <div class="links">
-    <a href="/pawdiac/support">Support</a>
-    <a href="/pawdiac/privacy">Privacy Policy</a>
-    <a href="/pawdiac/terms">Terms of Use</a>
-  </div>
-
-  <h2>Setting up your dog's profile</h2>
-  <ul>
-    <li>Enter your dog's name, birth date, and breed during onboarding</li>
-    <li>The more accurate the birth date, the more personalised the cosmic profile</li>
-    <li>You can edit your dog's profile anytime from the Profile tab</li>
-  </ul>
-
-  <h2>Daily readings not updating?</h2>
-  <ul>
-    <li>Readings refresh at midnight in your local timezone</li>
-    <li>Pull down to refresh on the home screen</li>
-    <li>Make sure your device has an internet connection</li>
-  </ul>
-
-  <h2>Notifications not working?</h2>
-  <ul>
-    <li>Go to Settings → Pawdiac → Notifications and enable them</li>
-    <li>Daily reading notifications are sent once per day in the morning</li>
-  </ul>
-
-  <h2>Subscription &amp; billing</h2>
-  <ul>
-    <li>Pawdiac Pro unlocks unlimited dog profiles and full cosmic history</li>
-    <li>Manage or cancel via Settings → Apple ID → Subscriptions</li>
-    <li>For refunds, contact Apple at reportaproblem.apple.com</li>
-  </ul>
-
-  <div class="contact">
-    <h2 style="margin-top:0">Contact us</h2>
-    <p>Email us at <a href="mailto:support@sunny-days.fyi">support@sunny-days.fyi</a> — we respond within 24 hours.</p>
-  </div>
-
-  <footer>
-    <a href="/pawdiac/privacy">Privacy Policy</a>
-    <a href="/pawdiac/terms">Terms of Use</a>
-    <a href="/">sunny-days.fyi</a>
-  </footer>
+<body class="theme-dog">
+  <main class="page">
+    <nav class="nav">
+      <a class="brand" href="/"><span class="brand-mark">☀️</span><span>Sunny Days</span></a>
+      <div class="nav-links"><a href="/">All apps</a><a href="/pawdiac/support.html">Support</a><a href="/pawdiac/privacy.html">Privacy</a></div>
+    </nav>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Pawdiac <span class="status"><span class="dot"></span>In review</span></div>
+        <h1>The stars speak to them too.</h1>
+        <p>Pawdiac turns your dog's birthday, breed, name, and personality traits into a cosmic profile that helps you understand the little soul living beside you.</p>
+        <div class="cta-panel">
+          <form class="email-form" data-app="Pawdiac">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Email for Pawdiac updates" autocomplete="email" required>
+            <button class="button" type="submit">Get launch alert</button>
+          </form>
+          <p class="form-note">We will send a note when Pawdiac is ready for download.</p>
+        </div>
+      </div>
+      <div class="device" aria-hidden="true">
+        <div class="screen">
+          <div class="screen-top"><span>Pawdiac</span><span>Daily Reading</span></div>
+          <div class="app-glyph">🐾</div>
+          <h2>Your dog's cosmic profile.</h2>
+          <div class="screen-list">
+            <div class="screen-row"><span>Sun sign</span><strong>Leo</strong></div>
+            <div class="screen-row"><span>Life path</span><strong>Companion</strong></div>
+            <div class="screen-row"><span>Today</span><strong>Playful</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-head"><h2>A serious little system for dog people.</h2><p>Part astrology, part personality profile, part daily companion for noticing your dog more clearly.</p></div>
+      <div class="feature-grid">
+        <article class="feature"><h3>Cosmic profile</h3><p>Blend sun sign, moon sign, numerology, Chinese zodiac, breed, and observed traits.</p></article>
+        <article class="feature"><h3>Daily readings</h3><p>Receive a grounded, personalized reflection for your dog's mood and energy.</p></article>
+        <article class="feature"><h3>Multiple dogs</h3><p>Add every dog in the family and keep their readings and history in one place.</p></article>
+      </div>
+    </section>
+    <footer class="footer"><span>© 2026 Sunny Days Apps</span><a href="/pawdiac/terms.html">Terms</a><a href="mailto:support@sunny-days.fyi">support@sunny-days.fyi</a></footer>
+  </main>
+  <script src="/signup.js"></script>
 </body>
 </html>

@@ -4,42 +4,101 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sunny Days Apps</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0f; color: #fff; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 24px; }
-    .tagline { font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #666; margin-bottom: 48px; }
-    .apps { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; max-width: 640px; }
-    .app-card { background: #141418; border: 1px solid #222; border-radius: 20px; padding: 28px 24px; width: 180px; text-align: center; text-decoration: none; transition: border-color 0.2s, transform 0.2s; }
-    .app-card:hover { border-color: #444; transform: translateY(-2px); }
-    .app-icon { font-size: 40px; margin-bottom: 12px; }
-    .app-name { font-size: 15px; font-weight: 600; color: #fff; margin-bottom: 4px; }
-    .app-desc { font-size: 12px; color: #666; line-height: 1.5; }
-    footer { margin-top: 64px; font-size: 12px; color: #444; }
-    footer a { color: #666; text-decoration: none; }
-    footer a:hover { color: #aaa; }
-  </style>
+  <meta name="description" content="Small, delightful iOS apps from Sunny Days. Coffee tools, dog games, music meaning, crystals, and playful consumer experiments.">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <p class="tagline">Apps by Sunny Dulay</p>
-  <div class="apps">
-    <a class="app-card" href="/brewscan">
-      <div class="app-icon">☕</div>
-      <div class="app-name">BrewScan</div>
-      <div class="app-desc">Point. Scan. Brew. AI-powered Nespresso pod identifier.</div>
-    </a>
-    <a class="app-card" href="/pawdiac">
-      <div class="app-icon">🐾</div>
-      <div class="app-name">Pawdiac</div>
-      <div class="app-desc">Dog astrology & cosmic intelligence for your pup.</div>
-    </a>
-    <a class="app-card" href="/lore">
-      <div class="app-icon">🎵</div>
-      <div class="app-name">Lore</div>
-      <div class="app-desc">The meaning behind every song.</div>
-    </a>
-  </div>
-  <footer>
-    <a href="mailto:support@sunny-days.fyi">support@sunny-days.fyi</a>
-  </footer>
+  <main class="page">
+    <nav class="nav">
+      <a class="brand" href="/">
+        <span class="brand-mark">☀️</span>
+        <span>Sunny Days</span>
+      </a>
+      <div class="nav-links" aria-label="App navigation">
+        <a href="/podsnap/">PodSnap AI</a>
+        <a href="/pup-crush/">Pup Crush</a>
+        <a href="/pocket-crystals/">Pocket Crystals</a>
+        <a href="#apps">All apps</a>
+      </div>
+    </nav>
+
+    <section class="hero compact-hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Apps by Sunny Dulay</div>
+        <h1>Useful, playful apps for everyday obsessions.</h1>
+        <p>Sunny Days is a studio for focused consumer apps: tools for rituals, games for quick joy, and AI-native companions for the things people already love.</p>
+        <div class="cta-panel">
+          <form class="email-form" data-app="Sunny Days">
+            <label class="sr-only" for="home-email">Email</label>
+            <input id="home-email" name="email" type="email" placeholder="Email for launch updates" autocomplete="email" required>
+            <button class="button" type="submit">Get updates</button>
+          </form>
+          <p class="form-note">Get launch notes across the Sunny Days portfolio. No noise.</p>
+        </div>
+      </div>
+      <div class="device" aria-hidden="true">
+        <div class="screen">
+          <div class="screen-top"><span>Sunny Days</span><span>Portfolio</span></div>
+          <div class="app-glyph">☀️</div>
+          <h2>One domain. Every little bet.</h2>
+          <div class="screen-list">
+            <div class="screen-row"><span>PodSnap AI</span><strong>App Store prep</strong></div>
+            <div class="screen-row"><span>Pup Crush</span><strong>Submitted</strong></div>
+            <div class="screen-row"><span>Pocket Crystals</span><strong>Concept</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="apps">
+      <div class="section-head">
+        <h2>All projects</h2>
+        <p>Each app now has a landing page, status, and email CTA under the Sunny Days domain.</p>
+      </div>
+      <div class="app-grid">
+        <a class="app-card" href="/podsnap/">
+          <div class="card-top"><span class="card-icon">☕</span><span class="card-status"><span class="dot"></span>App Store prep</span></div>
+          <h3>PodSnap AI</h3>
+          <p>AI-powered coffee pod scanner for identifying capsules, tracking favorites, and finding the right brew.</p>
+        </a>
+        <a class="app-card" href="/pup-crush/">
+          <div class="card-top"><span class="card-icon">🐶</span><span class="card-status"><span class="dot"></span>Submitted</span></div>
+          <h3>Pup Crush</h3>
+          <p>A charming match-3 dog game built around cute breeds, quick rounds, and joyful puzzle play.</p>
+        </a>
+        <a class="app-card" href="/pocket-crystals/">
+          <div class="card-top"><span class="card-icon">💎</span><span class="card-status"><span class="dot"></span>Concept</span></div>
+          <h3>Pocket Crystals</h3>
+          <p>A crystal companion for discovering stones, understanding their meaning, and building tiny rituals.</p>
+        </a>
+        <a class="app-card" href="/pawdiac/">
+          <div class="card-top"><span class="card-icon">🐾</span><span class="card-status"><span class="dot"></span>In review</span></div>
+          <h3>Pawdiac</h3>
+          <p>Dog astrology and cosmic intelligence for understanding your pup through a more magical lens.</p>
+        </a>
+        <a class="app-card" href="/pop-crush/">
+          <div class="card-top"><span class="card-icon">🎵</span><span class="card-status"><span class="dot"></span>Coming soon</span></div>
+          <h3>Pop Crush</h3>
+          <p>Pop music trivia with daily challenges, artist deep dives, lyric clues, and leaderboard energy.</p>
+        </a>
+        <a class="app-card" href="/lore/">
+          <div class="card-top"><span class="card-icon">🎧</span><span class="card-status"><span class="dot"></span>Concept</span></div>
+          <h3>Lore</h3>
+          <p>Shazam for meaning: song stories, interpretations, references, and the emotional context behind music.</p>
+        </a>
+        <a class="app-card" href="/brewscan/">
+          <div class="card-top"><span class="card-icon">☕</span><span class="card-status"><span class="dot"></span>Legacy page</span></div>
+          <h3>BrewScan</h3>
+          <p>The original coffee scanner page remains live while PodSnap AI becomes the sharper app brand.</p>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Sunny Days Apps</span>
+      <a href="mailto:support@sunny-days.fyi">support@sunny-days.fyi</a>
+    </footer>
+  </main>
+  <script src="/signup.js"></script>
 </body>
 </html>
